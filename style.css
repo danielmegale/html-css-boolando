@@ -3,6 +3,9 @@
     padding: 0;
 	box-sizing: border-box;
 }
+body{
+    padding-top: 34px;
+}
 .debug{
 }
 .debug .border{
@@ -12,6 +15,11 @@
 header{
     background-color: #FF6900;
     color: white;
+    position: fixed;
+    left: 0;
+    right:0 ;
+    top: 0;
+    z-index: 1;
 }
 .flex{
     display: flex;
@@ -35,9 +43,12 @@ img{
 .card{
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 30px;
+    gap: 10px;
 }
 .col{
-    flex-basis:calc(100% / 3);
+    flex-basis:calc( (100% - 20px ) / 3 );
+    padding-bottom: 10px;
 }
 .img-col{
     width: 100%;
@@ -62,7 +73,7 @@ span{
     display: inline-block;
   }
   .description{
-    font-size: 20px;
+    font-size: 15px;
   }
   .reverse{
     display: none;
@@ -80,7 +91,7 @@ span{
 .relative{
     position:relative ;
 }
-.fa-heart{
+main .fa-heart{
     position: absolute;
     top: 6px;
     right: 0px;
@@ -88,7 +99,7 @@ span{
     font-size: 19px;
     padding: 8px;
 }
-.fa-heart:hover{
+main .fa-heart:hover{
     color: red;
 }
 .relative:hover .change{
@@ -96,4 +107,10 @@ span{
 }
 .relative:hover .reverse{
    display: block;
+}
+.green{
+    background-color: green;
+}
+.icon{
+    padding: 3px;
 }
