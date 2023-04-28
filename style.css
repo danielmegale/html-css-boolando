@@ -35,12 +35,65 @@ img{
 .card{
     justify-content: space-around;
     flex-wrap: wrap;
-    
 }
-.flex-img{
-    height: 100px
+.col{
+    flex-basis:calc(100% / 3);
 }
+.img-col{
+    width: 100%;
+}
+span{
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    background-color: #FF0000;
+    font-size: 12px;
+    padding: 4px;
+    color: white;
+  }
+  .text{
+    color: red;
+    font-size: 12px;
+    display: inline-block;
+  }
+  .d-text{
+    font-size: 10px;
+    text-decoration: line-through;
+    display: inline-block;
+  }
+  .description{
+    font-size: 20px;
+  }
+  .reverse{
+    display: none;
+  }
 /* utils */
 .bold{
     font-weight: bold;
+}
+.discount{
+    position: absolute;
+    left:110%;
+    bottom:0px;
+    background-color: green;
+}
+.relative{
+    position:relative ;
+}
+.fa-heart{
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    background-color: white;
+    font-size: 19px;
+    padding: 8px;
+}
+.fa-heart:hover{
+    color: red;
+}
+.relative:hover .change{
+    display: none;
+}
+.relative:hover .reverse{
+   display: block;
 }
