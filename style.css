@@ -53,7 +53,7 @@ img{
 .img-col{
     width: 100%;
 }
-span{
+.coupon{
     position: absolute;
     left: 0;
     bottom: 25px;
@@ -77,6 +77,9 @@ span{
   }
   .reverse{
     display: none;
+  }
+  footer{
+    background-color: black;
   }
 /* utils */
 .bold{
@@ -113,4 +116,22 @@ main .fa-heart:hover{
 }
 .icon{
     padding: 3px;
+}
+.info-footer{
+    color: white;
+    font-size: 12px;
+    display: flex;
+    line-height: 35px;
+    justify-content: space-between;
+}
+.size-23{
+    font-size: 23px;
+    padding-top: 16px;
+}
+span{
+    padding-right: 10px;
+}
+.fa-things{
+    font-size: 24px;
+    text-align: center;
 }
